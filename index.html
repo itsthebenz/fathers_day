@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FatherDay</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="fathersdaycard";>
+        <div class="cardFront";>
+            <div class="collarright"></div>
+             <div class="collarleft"></div>
+             <div class="tie";></div>
+             <div class="tiger">
+                <img src="tiger.png" alt="tiger">
+            </div>
+             <div class="message";>
+                <p>
+                     HAPPY<p> GLEASON</p> DAY <p> ...aka bobs the asian tiger parent</p>
+                </p>
+            </div>
+         </div>
+
+        <div class="back">
+            <div class="note">
+                <p>
+                    爸爸，<p>父亲节快乐！</p> 谢谢你一直以来对我的照顾和支持。
+
+                    在这个特别的日子里，我想简单地对你说声谢谢！感谢你不仅是我的父亲，还是我的指导者。你的支持让我能够专心学习和追求梦想。我一定会好好读书的，别担心！虽然我们不常表达情感，但你的默默奉献一直在我心中。
+                    
+                    祝你父亲节快乐，希望你永远健康！<p> 爱你，陈心恩 OUT ✌️</p>
+                </p>
+        
+            <div class="me2">  <img src="me2.png" alt="me2"></div>
+            </div>
+        </div>
+        </div>
+    </div>  
+
+    <script>
+        const numChips = 20; // Number of poker chips
+        const body = document.body;
+
+        for (let i = 0; i < numChips; i++) {
+            const chip = document.createElement('div');
+            chip.classList.add('chip');
+            chip.style.left = Math.random() * 100 + 'vw';
+            chip.style.animationDuration = 3 + Math.random() * 2 + 's';
+            chip.style.animationDelay = Math.random() * 5 + 's';
+            body.appendChild(chip);
+        }
+    </script>
+</body>
+</html>
